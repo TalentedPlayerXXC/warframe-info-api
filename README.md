@@ -1,5 +1,5 @@
 ## warframe-info-api
-### 感谢[WsureWarframe](https://github.com/WsureWarframe)
+### 感谢[WsureWarframe](https://github.com/WsureWarframe)的server
 #### 这是一个Node.js后端服务，主要负责提供三类数据：
 1. Warframe世界状态 __url:[/wf/①/②]()__
     - ① 必填参数
