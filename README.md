@@ -1,4 +1,5 @@
 ## warframe-info-api
+### 感谢[WsureWarframe](https://github.com/WsureWarframe)
 #### 这是一个Node.js后端服务，主要负责提供三类数据：
 1. Warframe世界状态 __url:[/wf/①/②]()__
     - ① 必填参数
@@ -42,5 +43,5 @@
         - 紫卡名称，可模糊(支持中英文，新武器建议英文搜索，词库中中文名更新不一定及时)
         
 ### 调用方式，以查询wm商品价格为例
-#### ①. [GET/POST]  [/wm/robot/持久力](http://nymph.rbq.life:3000/wm/robot/持久力)
-#### ②. [GET/POST]  [/wm/robot?type=持久力](http://nymph.rbq.life:3000/wm/robot?type=持久力)
+#### ①. [GET/POST]  [/wm/robot/持久力]
+#### ②. [GET/POST]  [/wm/robot?type=持久力]
