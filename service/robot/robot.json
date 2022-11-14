@@ -1,0 +1,398 @@
+{
+  "config": {
+  },
+  "commands": [
+    {
+      "name": "wm",
+      "type": "PARAM",
+      "path": "/wm/robot/",
+      "alia": "wm",
+      "desc": "warframe market 市场价格查询"
+    },
+    {
+      "name": "rm",
+      "type": "PARAM",
+      "path": "/rm/robot/",
+      "alia": "rm",
+      "desc": "riven market 市场价格查询"
+    },
+    {
+      "name": "tran",
+      "type": "PARAM",
+      "path": "/dict/tran/robot/",
+      "alia": "tran",
+      "desc": "游戏词语翻译"
+    },
+    {
+      "name": "wiki",
+      "type": "PARAM",
+      "path": "/wiki/robot/",
+      "alia": "wiki",
+      "desc": "灰机wiki连接"
+    },
+    {
+      "name": "新闻",
+      "type": "SIMPLE",
+      "path": "/wf/robot/news",
+      "alia": "wf",
+      "desc": "warframe 世界状态 新闻"
+    },
+    {
+      "name": "事件",
+      "type": "SIMPLE",
+      "path": "/wf/robot/events",
+      "alia": "wf",
+      "desc": "warframe 世界状态 事件"
+    },
+    {
+      "name": "警报",
+      "type": "SIMPLE",
+      "path": "/wf/robot/alerts",
+      "alia": "wf",
+      "desc": "warframe 世界状态 警报"
+    },
+    {
+      "name": "突击",
+      "type": "SIMPLE",
+      "path": "/wf/robot/sortie",
+      "alia": "wf",
+      "desc": "warframe 世界状态 突击"
+    },
+    {
+      "name": "地球赏金",
+      "type": "SIMPLE",
+      "path": "/wf/robot/Ostrons",
+      "alia": "wf",
+      "desc": "warframe 世界状态 地球赏金"
+    },
+    {
+      "name": "金星赏金",
+      "type": "SIMPLE",
+      "path": "/wf/robot/Solaris",
+      "alia": "wf",
+      "desc": "warframe 世界状态 金星赏金"
+    },
+    {
+      "name": "火卫二赏金",
+      "type": "SIMPLE",
+      "path": "/wf/robot/Entrati",
+      "alia": "wf",
+      "desc": "warframe 世界状态 火卫二赏金"
+    },
+    {
+      "name": "裂缝",
+      "type": "SIMPLE",
+      "path": "/wf/robot/fissures",
+      "alia": "wf",
+      "desc": "warframe 世界状态 裂缝"
+    },
+    {
+      "name": "促销商品",
+      "type": "SIMPLE",
+      "path": "/wf/robot/flashSales",
+      "alia": "wf",
+      "desc": "warframe 世界状态 促销商品"
+    },
+    {
+      "name": "入侵",
+      "type": "SIMPLE",
+      "path": "/wf/robot/invasions",
+      "alia": "wf",
+      "desc": "warframe 世界状态 入侵"
+    },
+    {
+      "name": "奸商",
+      "type": "SIMPLE",
+      "path": "/wf/robot/voidTrader",
+      "alia": "wf",
+      "desc": "warframe 世界状态 奸商"
+    },
+    {
+      "name": "特价",
+      "type": "SIMPLE",
+      "path": "/wf/robot/dailyDeals",
+      "alia": "wf",
+      "desc": "warframe 世界状态 特价"
+    },
+    {
+      "name": "小小黑",
+      "type": "SIMPLE",
+      "path": "/wf/robot/persistentEnemies",
+      "alia": "wf",
+      "desc": "warframe 世界状态 小小黑"
+    },
+    {
+      "name": "地球",
+      "type": "SIMPLE",
+      "path": "/wf/robot/earthCycle",
+      "alia": "wf",
+      "desc": "warframe 世界状态 地球"
+    },
+    {
+      "name": "地球平原",
+      "type": "SIMPLE",
+      "path": "/wf/robot/cetusCycle",
+      "alia": "wf",
+      "desc": "warframe 世界状态 地球平原"
+    },
+    {
+      "name": "火卫二平原",
+      "type": "SIMPLE",
+      "path": "/wf/robot/cambionCycle",
+      "alia": "wf",
+      "desc": "warframe 世界状态 火卫二平原"
+    },
+    {
+      "name": "金星平原",
+      "type": "SIMPLE",
+      "path": "/wf/robot/vallisCycle",
+      "alia": "wf",
+      "desc": "warframe 世界状态 金星平原"
+    },
+    {
+      "name": "电波",
+      "type": "SIMPLE",
+      "path": "/wf/robot/nightwave",
+      "alia": "wf",
+      "desc": "warframe 世界状态 电波"
+    },
+    {
+      "name": "仲裁",
+      "type": "SIMPLE",
+      "path": "/wf/robot/arbitration",
+      "alia": "wf",
+      "desc": "warframe 世界状态 仲裁"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "警报通知",
+      "alia": "alerts",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/alerts",
+      "infoPath": "/robot/info/wf/alerts/",
+      "type": "NOTIFY_GROUP",
+      "head": "在?来打警报?"
+    },
+    {
+      "name": "奸商通知",
+      "alia": "voidTrader",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/voidTrader",
+      "infoPath": "/robot/info/wf/voidTrader/",
+      "type": "NOTIFY_GROUP",
+      "head": "在?刺杀奸商?"
+    },
+    {
+      "name": "裂缝通知",
+      "alia": "fissures",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/fissures",
+      "infoPath": "/robot/info/wf/fissures/",
+      "type": "NOTIFY_GROUP",
+      "head": "在?来开核桃?"
+    },
+    {
+      "name": "入侵通知",
+      "alia": "invasions",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/invasions",
+      "infoPath": "/robot/info/wf/invasions/",
+      "type": "NOTIFY_GROUP",
+      "head": "在?来打入侵?"
+    },
+    {
+      "name": "仲裁通知",
+      "alia": "arbitration",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/arbitration",
+      "infoPath": "/robot/info/wf/arbitration/",
+      "type": "NOTIFY_GROUP",
+      "head": "在?来肝仲裁?"
+    },
+    {
+      "name": "地球昼夜通知",
+      "alia": "earthCycle",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/earthCycle",
+      "infoPath": "/robot/info/wf/earthCycle/",
+      "type": "NOTIFY_GROUP",
+      "head": "地球昼夜通知"
+    },
+    {
+      "name": "地球平原通知",
+      "alia": "cetusCycle",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/cetusCycle",
+      "infoPath": "/robot/info/wf/cetusCycle/",
+      "type": "NOTIFY_GROUP",
+      "head": "地球平原通知"
+    },
+    {
+      "name": "金星平原通知",
+      "alia": "vallisCycle",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/vallisCycle",
+      "infoPath": "/robot/info/wf/vallisCycle/",
+      "type": "NOTIFY_GROUP",
+      "head": "金星平原通知"
+    },
+    {
+      "name": "火卫二平原通知",
+      "alia": "cambionCycle",
+      "period": 300000,
+      "queuePath": "/robot/queue/wf/cambionCycle",
+      "infoPath": "/robot/info/wf/cambionCycle/",
+      "type": "NOTIFY_GROUP",
+      "head": "火卫二平原通知"
+    }
+  ],
+  "kkbCommands": [
+    {
+      "action": "wm {word}",
+      "name": "wm",
+      "params": [
+        "word"
+      ],
+      "url": "http://nymph.rbq.life:3000/wm/robot/%s"
+    },
+    {
+      "action": "rm {word}",
+      "name": "rm",
+      "params": [
+        "word"
+      ],
+      "url": "http://nymph.rbq.life:3000/rm/robot/%s"
+    },
+    {
+      "action": "tran {word}",
+      "name": "tran",
+      "params": [
+        "word"
+      ],
+      "url": "http://nymph.rbq.life:3000/dict/tran/robot/%s"
+    },
+    {
+      "action": "wiki {word}",
+      "name": "wiki",
+      "params": [
+        "word"
+      ],
+      "url": "http://nymph.rbq.life:3000/wiki/robot/%s"
+    },
+    {
+      "action": "新闻",
+      "name": "news",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/news"
+    },
+    {
+      "action": "事件",
+      "name": "events",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/events"
+    },
+    {
+      "action": "警报",
+      "name": "alerts",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/alerts"
+    },
+    {
+      "action": "突击",
+      "name": "sortie",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/sortie"
+    },
+    {
+      "action": "地球赏金",
+      "name": "Ostrons",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/Ostrons"
+    },
+    {
+      "action": "金星赏金",
+      "name": "Solaris",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/Solaris"
+    },
+    {
+      "action": "火卫二赏金",
+      "name": "Entrati",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/Entrati"
+    },
+    {
+      "action": "裂缝",
+      "name": "fissures",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/fissures"
+    },
+    {
+      "action": "促销商品",
+      "name": "flashSales",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/flashSales"
+    },
+    {
+      "action": "入侵",
+      "name": "invasions",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/invasions"
+    },
+    {
+      "action": "奸商",
+      "name": "voidTrader",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/voidTrader"
+    },
+    {
+      "action": "特价",
+      "name": "dailyDeals",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/dailyDeals"
+    },
+    {
+      "action": "小小黑",
+      "name": "persistentEnemies",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/persistentEnemies"
+    },
+    {
+      "action": "地球",
+      "name": "earthCycle",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/earthCycle"
+    },
+    {
+      "action": "地球平原",
+      "name": "cetusCycle",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/cetusCycle"
+    },
+    {
+      "action": "火卫二平原",
+      "name": "cambionCycle",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/cambionCycle"
+    },
+    {
+      "action": "金星平原",
+      "name": "vallisCycle",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/vallisCycle"
+    },
+    {
+      "action": "电波",
+      "name": "nightwave",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/nightwave"
+    },
+    {
+      "action": "仲裁",
+      "name": "arbitration",
+      "params": [],
+      "url": "http://nymph.rbq.life:3000/wf/robot/arbitration"
+    }
+  ]
+}
